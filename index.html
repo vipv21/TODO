@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<title>todo</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="layer/skin/layer.css">
+	<script src="layer/jquery-1.12.4.min.js"></script>
+	<script src="layer/layer.js"></script>
+	<script src="js/index.js"></script>
+	
+</head>
+<body>
+	<header>
+		<section>
+				<form action="javascript:postaction()" id="form">
+					<label for="title">ToDoList</label>
+					<input type="text" id="title" name="title" placeholder="添加信息" required="required" autocomplete="off" />
+				</form>
+			</section>
+	</header>
+	<section>
+			<h2 onclick="save()">正在进行 <span id="todocount"></span></h2>
+			<ol id="todolist" class="demo-box"><img src="01.png">
+			</ol>
+			<h2>已经完成 <span id="donecount"></span></h2>
+			<ul id="donelist"></ul>
+	</section>
+		<footer>
+			<a href="javascript:clear();">清除</a>
+		</footer>
+</body>
+</html>
